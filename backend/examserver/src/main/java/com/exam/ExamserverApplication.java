@@ -50,7 +50,7 @@ public class ExamserverApplication implements CommandLineRunner {
 		UserRole userRole = new UserRole();
 		userRole.setRole(role1);
 		userRole.setUser(user);
-
+			userRoleSet.add(userRole);
 		User user1 = this.userService.createUser(user, userRoleSet);
 		System.out.println(user1.getUsername());
 
